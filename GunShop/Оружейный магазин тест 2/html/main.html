@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts-online.ru/fonts/molot">
+</head>
+
+<body>
+
+    <header>
+        <div class="list">
+            <ul>
+                <li><a href="compani.html">О компании</a></li>
+                <li><a href="Terms_of_pucrhase.html">Условия покупки</a></li>
+                <li id="catalog-link">Каталог</li>
+                <li>Законодательство</li>
+                <li> <a href="histoty.html">Блог</a></li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+        <!-- Окно для каталога-->
+        <div id="catalog-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Категории оружия</h2>
+                <ul>
+                    <li><a href="#" onclick="filterProducts('pistols')">Пистолеты</a></li>
+                    <li><a href="#" onclick="filterProducts('rifles')">Ружья</a></li>
+                    <li><a href="rifels.html" onclick="filterProducts('snipers')">Винтовки</a></li>
+                    <li><a href="#" onclick="filterProducts('knives')">Ножи</a></li>
+                    <li><a href="#" onclick="filterProducts('accessories')">Аксессуары</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="../image/Пистолет.png" alt="" width="150px" height="200px">
+            <h1>Белая пуля</h1>
+            <div class="enter_regist">
+                <!-- Форма входа -->
+                <div class="form-container enter">
+                    <h2 id="login-toggle">Вход</h2>
+                    <form class="form-content" id="login-form">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="password" placeholder="Пароль" required>
+                        <button type="submit">Вход</button>
+                    </form>
+                </div>
+            
+                <!-- Форма регистрации -->
+                <div class="form-container regis">
+                    <h2 id="register-toggle">Регистрация</h2>
+                    <form class="form-content" id="register-form">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Пароль" required>
+                        <button type="submit">Регистрация</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <img src="../image/Ata arms.jpg" alt="Slide 1" class="slider-image">
+                    <img src="../image/Ultima.jpg" alt="Slide 2" class="slider-image">
+                    <img src="../image/images.png" alt="Slide 3" class="slider-image">
+                    <img src="../image/ber-1301.jpg" alt="Slide 4" class="slider-image">
+                    <img src="../image/barett.jpg" alt="Slide 5" class="slider-image">
+                </div>
+            </div>
+            <div class="text-container">
+                <div class="text-track" id="textTrack">
+                    <div class="text-slide" id="text-slide">
+                        <h2>ATA ARMS Turqua Synthetic Black (ложа черный пластик), 308Win</h2>
+                        <p>Калибр, мм:
+
+                            308 Win
+                            <br>
+                            Артикул производителя:
+
+                            ATA.T.06
+                            <br>
+                            Страна происхождения:
+
+                            ТУРЦИЯ:
+                            <br>
+                            Принцип действия:
+
+                            Продольно-скользящий (болтовой) затвор
+                            <br>
+                            Тип магазина:
+
+                            Отъемный
+                            <br>
+                            Длина ствола:
+
+                            560 мм
+                            <br>
+                            Тип ствола:
+
+                            Нарезной
+                            <br>
+                            Тип взвода:
+
+                            Болтовой
+                            <br>
+                            Производитель:
+
+                            ATA Arms
+                            <br>
+                            Материал приклада:
+
+                            Пластик
+                            <br>
+                            Емкость магазина:
+
+                            3+5
+                            <br>
+                            Тип заряда:
+
+                            Патрон
+                        </p>
+                        <a class="buy" href="https://fonts-online.ru/fonts/molot" target="_blank">
+                            <span class="text-buy">Купить</span>
+                            <span class="price">145.000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="text-slide" id="text-slide">
+                        <h2>Ружье полуавтоматическое Benelli Colombo 12/76, 71</h2>
+                        <p>Бренд:
+
+
+                            Benelli
+                            <br>
+                            Калибр:
+
+
+                            12/76
+                            <br>
+                            Страна:
+
+
+                            Италия
+                            <br>
+                            Требуется лицензия:
+
+
+                            Только с лицензией
+                            <br>
+                            Тип оружия (принцип действия):
+
+
+                            Инерционное
+                            <br>
+                            Расположение стволов (гладкоствольное):
+
+
+                            Одноствольное
+                            <br>
+                            Длина ствола:
+
+
+                            710 мм
+                            <br>
+                            Количество стволов:
+
+
+                            1 ст.
+                            <br>
+                            Код товара:
+
+
+                            29057535
+                            <br>
+                            Тип магазина:
+
+
+                            Трубчатый
+                            <br>
+                            Модель:
+
+
+                            Colombo
+                            <br>
+                            Емкость магазина:
+
+
+                            4+1
+                            <br>
+                            Материал ложа:
+
+
+                            Дерево
+                            <br>
+                            Гарантия:
+
+
+                            12 месяцев
+                            <br>
+                            Под левую руку/под правую руку:
+
+
+                            Под правую руку
+                            <br>
+                            Открытые прицельные приспособление:
+
+
+                            Да/WS
+                        </p>
+                        <a class="buy" href="https://fonts-online.ru/fonts/molot" target="_blank">
+                            <span class="text-buy">Купить</span>
+                            <span class="price">330.000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="text-slide" id="text-slide">
+                        <h2>МР-155 Ultima 12/70 510 мм Алюминий/пластик Черный Сменные ДС</h2>
+                        <p>Производитель:
+                            ИМЗ Байкал
+                            <br>
+                            Страна:
+                            Россия
+                            <br>
+                            Страна-изготовитель:
+                            Россия
+                            <br>
+                            Марка оружия:
+                            МР-155 Ultima
+                            <br>
+                            Калибр:
+                            12х70
+                            <br>
+                            Емкость магазина:
+                            7 местный
+                            <br>
+                            Вес:
+                            4400 г
+                            <br>
+                            Материал:
+                            Пластик
+                            <br>
+                            Тип приклада/ложа:
+                            Фиксированный
+                            <br>
+                            Длина ствола:
+                            510 мм
+                            <br>
+                            Тип перезарядки:
+                            Самозарядное
+                            <br>
+                            Система перезарядки:
+                            Газоотводное
+                            <br>
+                            Количество стволов:
+                            1
+                        </p>
+                        <a class="buy" href="https://fonts-online.ru/fonts/molot" target="_blank">
+                            <span class="text-buy">Купить</span>
+                            <span class="price">137.000 ₽</span>
+                        </a>
+                    </div>
+                    <div class="text-slide" id="text-slide">
+                        <h2>Ружьё Beretta Bellmonte I Synthetic 12/76 L=760</h2>
+                        <p>Калибр, мм:
+                            <br>
+
+                            12x76
+
+                            Артикул производителя:
+
+
+                            Ber 06
+                            <br>
+                            Цвет:
+
+
+                            Черный
+                            <br>
+                            Страна происхождения:
+
+
+                            ИТАЛИЯ
+                            <br>
+                            Принцип действия:
+
+
+                            Полуавтомат инерционный
+                            <br>
+                            Тип магазина:
+
+
+                            Трубчатый
+                            <br>
+                            Длина ствола:
+
+
+                            760
+                            <br>
+                            Длина:
+
+
+                            1290
+                            <br>
+                            Производитель:
+
+
+                            Berettа
+                        </p>
+                        <a class="buy" href="https://fonts-online.ru/fonts/molot" target="_blank">
+                            <span class="text-buy">Купить</span>
+                            <span class="price">122.310 ₽</span>
+                        </a>
+                    </div>
+                    <div class="text-slide" id="text-slide">
+                        <h2>Barett M82</h2>
+                        <p>Калибр: 12,7×99 (.50 BMG)
+                            <br>
+                            Страна производства: США
+                            <br>
+                            Длина оружия: 1447 мм
+                            <br>
+                            Длина ствола: 737 мм
+                            <br>
+                            Масса без патронов: 12,9 кг.
+                            <br>
+                            Емкость магазина: 10 патронов
+                            <br>
+                            Технические характеристики M82A1 CQ
+                            <br>
+                            Калибр: 12,7×99 (.50 BMG)
+                            <br>
+                            Длина оружия: 1220 мм
+                            <br>
+                            Длина ствола: 500 мм
+                            <br>
+                            Масса без патронов: 13,5 кг.
+                            <br>
+                            Емкость магазина: 10 патронов
+                        </p>
+                        <a class="buy" href="https://fonts-online.ru/fonts/molot" target="_blank">
+                            <span class="text-buy">Купить</span>
+                            <span class="price">1.010.366 ₽</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-buttons">
+            <button onclick="changeSlide(0)">1</button>
+            <button onclick="changeSlide(1)">2</button>
+            <button onclick="changeSlide(2)">3</button>
+            <button onclick="changeSlide(3)">4</button>
+            <button onclick="changeSlide(4)">5</button>
+        </div>
+    </div>
+
+    <footer>
+        <h3>2025 © Товары для охоты, рыбалки и туризма
+            <br>
+            Информация на сайте не является публичной офертой</h3>
+    </footer>
+
+    <script src="../js/main.js"> </script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/enter.js"></script>
+</body>
+<?php include("../php/include.php")?>
+</html>

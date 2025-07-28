@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/compani.css">
+</head>
+<body>
+    <header>
+        <nav class="list">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="#">Условия покупки</a></li>
+                <li id="catalog-link">Каталог</li>
+                <li><a href="#">Законодательство</a></li>
+                <li><a href="histoty.html">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div id="catalog-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Категории оружия</h2>
+                <ul>
+                    <li><a href="#" onclick="filterProducts('pistols')">Пистолеты</a></li>
+                    <li><a href="#" onclick="filterProducts('rifles')">Ружья</a></li>
+                    <li><a href="rifels.html" onclick="filterProducts('snipers')">Винтовки</a></li>
+                    <li><a href="#" onclick="filterProducts('knives')">Ножи</a></li>
+                    <li><a href="#" onclick="filterProducts('accessories')">Аксессуары</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logo">
+            <img src="../image/Пистолет.png" alt="Логотип" width="150px" height="200px">
+            <h1>Белая пуля</h1>
+        </div>
+    </header>
+    <main class="about-page">
+        <section class="about-section">
+            <h2>О компании</h2>
+            <p>Компания «Белая пуля» была основана в 2010 году с целью предоставления высококачественного оружия и аксессуаров для охотников, спортсменов и коллекционеров. Мы являемся лидерами в области продажи оружия и сопутствующих товаров, предлагая широкий ассортимент продукции от ведущих мировых производителей.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Наша история</h2>
+            <p>Все началось с небольшого магазина в центре города, где мы предлагали классическое охотничье оружие. С годами наш ассортимент расширился, и мы начали сотрудничать с известными брендами из США, Италии, Турции и России. Сегодня «Белая пуля» — это крупная сеть магазинов с онлайн-платформой, которая доставляет товары по всей стране.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Миссия компании</h2>
+            <p>Наша миссия — предоставлять клиентам надежное, качественное и безопасное оружие, соответствующее всем стандартам законодательства. Мы стремимся поддерживать культуру ответственного владения оружием и помогать нашим клиентам достигать своих целей в охоте, спорте и коллекционировании.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Наши преимущества</h2>
+            <ul>
+                <li>Широкий ассортимент товаров от ведущих производителей.</li>
+                <li>Профессиональная консультация и поддержка клиентов.</li>
+                <li>Гарантия качества и сертифицированная продукция.</li>
+                <li>Быстрая доставка по всей стране.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <h3>2025 © Товары для охоты, рыбалки и туризма<br>Информация на сайте не является публичной офертой</h3>
+    </footer>
+     <script src="../js/main.js"> </script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/enter.js"></script>
+</body>
+
+</html>

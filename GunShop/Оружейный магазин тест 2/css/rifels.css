@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Molot', sans-serif;
+}
+
+body {
+    background-color: #FF6A00;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.gun-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gun-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gun-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gun-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.gun-card .price {
+    font-size: 22px;
+    color: #FF6A00;
+    font-weight: bold;
+    font-family: 'Molot', sans-serif;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    margin-top: auto;
+}
+
+.list ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/***************************/
+
+h2{
+text-align: center;
+}
+  .content .price {
+    color: #FF6A00;
+    font-weight: bold;
+  }
+  
+  .content .add-to-cart {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 60px;
+  }
+  .content .add-to-cart:hover{
+      color: #ff6a00;
+  }
+  
+  .product .add-to-cart:hover {
+    background-color: #000000;
+  }
+  
+  /* Стили для секции корзины */
+  .cart {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  
+  .cart table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart th, .cart td {
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .cart .total {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .cart .remove-item {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    font-style: inherit;
+  }
+  
+  .cart .remove-item:hover {
+    background-color: #3b3a3a;
+    border-radius: 50px;
+  }
+.item-quantity{
+  font-size: 24px;
+  text-align: center;
+  background: none;
+  border: 5px ridge black;
+  border-radius: 60px;
+}
+  
+  
